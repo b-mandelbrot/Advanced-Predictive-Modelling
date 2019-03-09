@@ -2,6 +2,7 @@ MBA
 Instalando o R no Jupyter Notebook
 
 Abrir Anaconda Promt
+
 Navegar Para Pasta do R:
 
 ```bash
