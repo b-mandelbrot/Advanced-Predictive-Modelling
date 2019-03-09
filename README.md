@@ -5,7 +5,7 @@ Abrir Anaconda Promt
 Navegar Para Pasta do R:
 
 ```bash
-cd 'C:\Program Files\R\R-3.5.2\bin\x64'
+cd C:\Program Files\R\R-3.5.2\bin\x64
 ```
 Executar o R:
 ```bash
