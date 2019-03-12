@@ -13130,26 +13130,21 @@ div#notebook {
 
 
 
-
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 
-
-
 <br>
 Senha Gabarito <input id="numb">
 <button type="button" onclick="javascript:myFunction()">Submit</button>
-
 </div>
 </div>
 </div>
-
 
 
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="kn">library</span><span class="p">(</span>caret<span class="p">)</span>
@@ -13172,7 +13167,7 @@ Senha Gabarito <input id="numb">
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span>df <span class="o">&lt;-</span> read.csv<span class="p">(</span>file<span class="o">=</span><span class="s">&quot;/home/barsotti/Desktop/BostonCredit_Exercise.csv&quot;</span><span class="p">,</span> header<span class="o">=</span><span class="kc">TRUE</span><span class="p">,</span> sep<span class="o">=</span><span class="s">&quot;,&quot;</span><span class="p">)</span>
@@ -13185,7 +13180,7 @@ Senha Gabarito <input id="numb">
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="kp">set.seed</span><span class="p">(</span><span class="m">314</span><span class="p">)</span>
@@ -13199,7 +13194,7 @@ trainIndex <span class="o">&lt;-</span> createDataPartition<span class="p">(</sp
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span>dfTrain <span class="o">&lt;-</span> df<span class="p">[</span> trainIndex<span class="p">,]</span>
@@ -13213,7 +13208,7 @@ dfTest  <span class="o">&lt;-</span> df<span class="p">[</span><span class="o">-
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="kp">set.seed</span><span class="p">(</span><span class="m">314</span><span class="p">)</span>
@@ -13233,7 +13228,7 @@ model <span class="o">&lt;-</span> train<span class="p">(</span>APPROVED<span cl
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span>model
@@ -13279,7 +13274,7 @@ Resampling results:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span>dfPred <span class="o">&lt;-</span> predict<span class="p">(</span>model<span class="p">,</span> newdata<span class="o">=</span>dfTest<span class="p">)</span>
@@ -13345,7 +13340,7 @@ Prediction No Yes
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span>imp <span class="o">&lt;-</span> varImp<span class="p">(</span>model<span class="p">,</span> useModel<span class="o">=</span><span class="kc">FALSE</span><span class="p">,</span> scale<span class="o">=</span><span class="kc">FALSE</span><span class="p">)</span>
@@ -13665,16 +13660,16 @@ IOB/AZPFhHwlOu2jAAAAAElFTkSuQmCC"
 <tbody>
 <tr>
 <td>0</td>
-<td>25.25</td>
-<td>13.5</td>
+<td>25</td>
+<td>13</td>
 <td>1</td>
 <td>0</td>
 <td>w</td>
 <td>2</td>
-<td>0</td>
 <td>1</td>
 <td>1</td>
 <td>1</td>
+<td>1500</td>
 <td>?</td>
 </tr>
 </tbody>
@@ -13685,7 +13680,7 @@ IOB/AZPFhHwlOu2jAAAAAElFTkSuQmCC"
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span>candidato <span class="o">&lt;-</span> <span class="kt">data.frame</span><span class="p">(</span><span class="s">&quot;GENDER&quot;</span> <span class="o">=</span><span class="s">&quot;0&quot;</span> <span class="p">,</span> <span class="s">&quot;AGE&quot;</span> <span class="o">=</span><span class="m">25</span> <span class="p">,</span> <span class="s">&quot;DEBT&quot;</span> <span class="o">=</span><span class="m">13</span> <span class="p">,</span> <span class="s">&quot;MARRIED&quot;</span><span class="o">=</span><span class="m">1</span> <span class="p">,</span> <span class="s">&quot;BANK_CUSTOMER&quot;</span> <span class="o">=</span> <span class="m">0</span> <span class="p">,</span>
@@ -13731,13 +13726,13 @@ candidato<span class="o">$</span>Model <span class="o">&lt;-</span> y_Model
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Desafio)-Descreve-o-que-acontece-com-a-matriz-de-confus&#227;o-do-modelo-ao-adicionarmos-o-quadrado-da-feature-&quot;AGE&quot;-como-nova-feature">Desafio) Descreve o que acontece com a matriz de confus&#227;o do modelo ao adicionarmos o quadrado da feature "AGE" como nova feature<a class="anchor-link" href="#Desafio)-Descreve-o-que-acontece-com-a-matriz-de-confus&#227;o-do-modelo-ao-adicionarmos-o-quadrado-da-feature-&quot;AGE&quot;-como-nova-feature">&#182;</a></h4><h4 id="Obs)-Utilize-o-mesmo-seed-da-quest&#227;o-1.">Obs) Utilize o mesmo seed da quest&#227;o 1.<a class="anchor-link" href="#Obs)-Utilize-o-mesmo-seed-da-quest&#227;o-1.">&#182;</a></h4>
+<h4 id="Quest&#227;o-4)-Descreve-o-que-acontece-com-a-matriz-de-confus&#227;o-do-modelo-ao-adicionarmos-o-quadrado-da-feature-&quot;AGE&quot;-como-nova-feature">Quest&#227;o 4) Descreve o que acontece com a matriz de confus&#227;o do modelo ao adicionarmos o quadrado da feature "AGE" como nova feature<a class="anchor-link" href="#Quest&#227;o-4)-Descreve-o-que-acontece-com-a-matriz-de-confus&#227;o-do-modelo-ao-adicionarmos-o-quadrado-da-feature-&quot;AGE&quot;-como-nova-feature">&#182;</a></h4><h4 id="Obs)-Utilize-o-mesmo-seed-da-quest&#227;o-1.">Obs) Utilize o mesmo seed da quest&#227;o 1.<a class="anchor-link" href="#Obs)-Utilize-o-mesmo-seed-da-quest&#227;o-1.">&#182;</a></h4>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="kp">set.seed</span><span class="p">(</span><span class="m">314</span><span class="p">)</span>
@@ -13837,8 +13832,299 @@ Prediction No Yes
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Desafio)-Retreine-novamente-os-modelos-utilizando-como-seeds-314-e-300.-Agora-compare-o-custo-benef&#237;cio-dos-pontos-de-corte-0.3-,-0.5-e-0.7-com-os-seguintes-custos:">Desafio) Retreine novamente os modelos utilizando como seeds 314 e 300. Agora compare o custo benef&#237;cio dos pontos de corte 0.3 , 0.5 e 0.7 com os seguintes custos:<a class="anchor-link" href="#Desafio)-Retreine-novamente-os-modelos-utilizando-como-seeds-314-e-300.-Agora-compare-o-custo-benef&#237;cio-dos-pontos-de-corte-0.3-,-0.5-e-0.7-com-os-seguintes-custos:">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<table>
+<thead><tr>
+<th>TIPO</th>
+<th>CUSTO</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>VP</td>
+<td>+300</td>
+</tr>
+<tr>
+<td>FP</td>
+<td>-100</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-r"><pre><span></span><span class="kp">set.seed</span><span class="p">(</span><span class="m">314</span><span class="p">)</span>
+
+cv <span class="o">&lt;-</span> trainControl<span class="p">(</span>method <span class="o">=</span> <span class="s">&quot;repeatedcv&quot;</span><span class="p">,</span> number <span class="o">=</span> <span class="m">10</span><span class="p">,</span> savePredictions <span class="o">=</span> <span class="kc">TRUE</span><span class="p">,</span>
+                  summaryFunction<span class="o">=</span>twoClassSummary<span class="p">,</span> classProbs <span class="o">=</span> <span class="kc">TRUE</span><span class="p">)</span>
+
+
+model_314 <span class="o">&lt;-</span> train<span class="p">(</span>APPROVED<span class="o">~</span><span class="m">.</span><span class="p">,</span> data <span class="o">=</span> dfTrain<span class="p">,</span> method <span class="o">=</span> <span class="s">&quot;glm&quot;</span><span class="p">,</span> 
+                   metric<span class="o">=</span><span class="s">&quot;ROC&quot;</span><span class="p">,</span>trControl <span class="o">=</span> cv<span class="p">,</span> control <span class="o">=</span> <span class="kt">list</span><span class="p">(</span>maxit <span class="o">=</span> <span class="m">50</span><span class="p">))</span>
+
+dfProbs <span class="o">&lt;-</span> predict<span class="p">(</span>model_314<span class="p">,</span> newdata<span class="o">=</span>dfTest<span class="p">,</span> type<span class="o">=</span><span class="s">&quot;prob&quot;</span><span class="p">)</span>
+
+cuts <span class="o">&lt;-</span> <span class="kt">c</span><span class="p">(</span><span class="m">0.3</span><span class="p">,</span> <span class="m">0.5</span><span class="p">,</span> <span class="m">0.7</span><span class="p">)</span>
+
+<span class="kr">for</span> <span class="p">(</span>i <span class="kr">in</span> cuts<span class="p">)</span> <span class="p">{</span>
+    dfPred <span class="o">&lt;-</span> <span class="kp">ifelse</span><span class="p">(</span>dfProbs<span class="o">$</span>Yes <span class="o">&gt;=</span> i<span class="p">,</span> <span class="s">&#39;Yes&#39;</span><span class="p">,</span> <span class="s">&#39;No&#39;</span><span class="p">)</span>
+    dfPred <span class="o">&lt;-</span> <span class="kp">as.factor</span><span class="p">(</span>dfPred<span class="p">)</span>
+    <span class="kp">print</span><span class="p">(</span><span class="kp">paste</span><span class="p">(</span><span class="s">&quot;Nível de Corte: &quot;</span><span class="p">,</span> i<span class="p">))</span>
+    <span class="kp">print</span><span class="p">(</span>confusionMatrix<span class="p">(</span>data<span class="o">=</span>dfPred<span class="p">,</span> dfTest<span class="o">$</span>APPROVED<span class="p">))</span> 
+<span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[1] &#34;Nível de Corte:  0.3&#34;
+Confusion Matrix and Statistics
+
+          Reference
+Prediction No Yes
+       No  58   5
+       Yes 16  65
+                                          
+               Accuracy : 0.8542          
+                 95% CI : (0.7858, 0.9074)
+    No Information Rate : 0.5139          
+    P-Value [Acc &gt; NIR] : &lt;2e-16          
+                                          
+                  Kappa : 0.7093          
+ Mcnemar&#39;s Test P-Value : 0.0291          
+                                          
+            Sensitivity : 0.7838          
+            Specificity : 0.9286          
+         Pos Pred Value : 0.9206          
+         Neg Pred Value : 0.8025          
+             Prevalence : 0.5139          
+         Detection Rate : 0.4028          
+   Detection Prevalence : 0.4375          
+      Balanced Accuracy : 0.8562          
+                                          
+       &#39;Positive&#39; Class : No              
+                                          
+[1] &#34;Nível de Corte:  0.5&#34;
+Confusion Matrix and Statistics
+
+          Reference
+Prediction No Yes
+       No  61   8
+       Yes 13  62
+                                          
+               Accuracy : 0.8542          
+                 95% CI : (0.7858, 0.9074)
+    No Information Rate : 0.5139          
+    P-Value [Acc &gt; NIR] : &lt;2e-16          
+                                          
+                  Kappa : 0.7087          
+ Mcnemar&#39;s Test P-Value : 0.3827          
+                                          
+            Sensitivity : 0.8243          
+            Specificity : 0.8857          
+         Pos Pred Value : 0.8841          
+         Neg Pred Value : 0.8267          
+             Prevalence : 0.5139          
+         Detection Rate : 0.4236          
+   Detection Prevalence : 0.4792          
+      Balanced Accuracy : 0.8550          
+                                          
+       &#39;Positive&#39; Class : No              
+                                          
+[1] &#34;Nível de Corte:  0.7&#34;
+Confusion Matrix and Statistics
+
+          Reference
+Prediction No Yes
+       No  64  21
+       Yes 10  49
+                                          
+               Accuracy : 0.7847          
+                 95% CI : (0.7086, 0.8488)
+    No Information Rate : 0.5139          
+    P-Value [Acc &gt; NIR] : 1.747e-11       
+                                          
+                  Kappa : 0.5673          
+ Mcnemar&#39;s Test P-Value : 0.07249         
+                                          
+            Sensitivity : 0.8649          
+            Specificity : 0.7000          
+         Pos Pred Value : 0.7529          
+         Neg Pred Value : 0.8305          
+             Prevalence : 0.5139          
+         Detection Rate : 0.4444          
+   Detection Prevalence : 0.5903          
+      Balanced Accuracy : 0.7824          
+                                          
+       &#39;Positive&#39; Class : No              
+                                          
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-r"><pre><span></span><span class="kp">set.seed</span><span class="p">(</span><span class="m">300</span><span class="p">)</span>
+
+cv <span class="o">&lt;-</span> trainControl<span class="p">(</span>method <span class="o">=</span> <span class="s">&quot;repeatedcv&quot;</span><span class="p">,</span> number <span class="o">=</span> <span class="m">10</span><span class="p">,</span> savePredictions <span class="o">=</span> <span class="kc">TRUE</span><span class="p">,</span>
+                  summaryFunction<span class="o">=</span>twoClassSummary<span class="p">,</span> classProbs <span class="o">=</span> <span class="kc">TRUE</span><span class="p">)</span>
+
+
+model_300 <span class="o">&lt;-</span> train<span class="p">(</span>APPROVED<span class="o">~</span><span class="m">.</span><span class="p">,</span> data <span class="o">=</span> dfTrain<span class="p">,</span> method <span class="o">=</span> <span class="s">&quot;glm&quot;</span><span class="p">,</span> 
+                   metric<span class="o">=</span><span class="s">&quot;ROC&quot;</span><span class="p">,</span>trControl <span class="o">=</span> cv<span class="p">,</span> control <span class="o">=</span> <span class="kt">list</span><span class="p">(</span>maxit <span class="o">=</span> <span class="m">50</span><span class="p">))</span>
+
+
+dfProbs <span class="o">&lt;-</span> predict<span class="p">(</span>model_314<span class="p">,</span> newdata<span class="o">=</span>dfTest<span class="p">,</span> type<span class="o">=</span><span class="s">&quot;prob&quot;</span><span class="p">)</span>
+
+
+cuts <span class="o">&lt;-</span> <span class="kt">c</span><span class="p">(</span><span class="m">0.3</span><span class="p">,</span> <span class="m">0.5</span><span class="p">,</span> <span class="m">0.7</span><span class="p">)</span>
+<span class="kr">for</span> <span class="p">(</span>i <span class="kr">in</span> cuts<span class="p">)</span> <span class="p">{</span>
+    dfPred <span class="o">&lt;-</span> <span class="kp">ifelse</span><span class="p">(</span>dfProbs<span class="o">$</span>Yes <span class="o">&gt;=</span> i<span class="p">,</span> <span class="s">&#39;Yes&#39;</span><span class="p">,</span> <span class="s">&#39;No&#39;</span><span class="p">)</span>
+    dfPred <span class="o">&lt;-</span> <span class="kp">as.factor</span><span class="p">(</span>dfPred<span class="p">)</span>
+    <span class="kp">print</span><span class="p">(</span><span class="kp">paste</span><span class="p">(</span><span class="s">&quot;Nível de Corte: &quot;</span><span class="p">,</span> i<span class="p">))</span>
+    <span class="kp">print</span><span class="p">(</span>confusionMatrix<span class="p">(</span>data<span class="o">=</span>dfPred<span class="p">,</span> dfTest<span class="o">$</span>APPROVED<span class="p">))</span> 
+<span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[1] &#34;Nível de Corte:  0.3&#34;
+Confusion Matrix and Statistics
+
+          Reference
+Prediction No Yes
+       No  58   5
+       Yes 16  65
+                                          
+               Accuracy : 0.8542          
+                 95% CI : (0.7858, 0.9074)
+    No Information Rate : 0.5139          
+    P-Value [Acc &gt; NIR] : &lt;2e-16          
+                                          
+                  Kappa : 0.7093          
+ Mcnemar&#39;s Test P-Value : 0.0291          
+                                          
+            Sensitivity : 0.7838          
+            Specificity : 0.9286          
+         Pos Pred Value : 0.9206          
+         Neg Pred Value : 0.8025          
+             Prevalence : 0.5139          
+         Detection Rate : 0.4028          
+   Detection Prevalence : 0.4375          
+      Balanced Accuracy : 0.8562          
+                                          
+       &#39;Positive&#39; Class : No              
+                                          
+[1] &#34;Nível de Corte:  0.5&#34;
+Confusion Matrix and Statistics
+
+          Reference
+Prediction No Yes
+       No  61   8
+       Yes 13  62
+                                          
+               Accuracy : 0.8542          
+                 95% CI : (0.7858, 0.9074)
+    No Information Rate : 0.5139          
+    P-Value [Acc &gt; NIR] : &lt;2e-16          
+                                          
+                  Kappa : 0.7087          
+ Mcnemar&#39;s Test P-Value : 0.3827          
+                                          
+            Sensitivity : 0.8243          
+            Specificity : 0.8857          
+         Pos Pred Value : 0.8841          
+         Neg Pred Value : 0.8267          
+             Prevalence : 0.5139          
+         Detection Rate : 0.4236          
+   Detection Prevalence : 0.4792          
+      Balanced Accuracy : 0.8550          
+                                          
+       &#39;Positive&#39; Class : No              
+                                          
+[1] &#34;Nível de Corte:  0.7&#34;
+Confusion Matrix and Statistics
+
+          Reference
+Prediction No Yes
+       No  64  21
+       Yes 10  49
+                                          
+               Accuracy : 0.7847          
+                 95% CI : (0.7086, 0.8488)
+    No Information Rate : 0.5139          
+    P-Value [Acc &gt; NIR] : 1.747e-11       
+                                          
+                  Kappa : 0.5673          
+ Mcnemar&#39;s Test P-Value : 0.07249         
+                                          
+            Sensitivity : 0.8649          
+            Specificity : 0.7000          
+         Pos Pred Value : 0.7529          
+         Neg Pred Value : 0.8305          
+             Prevalence : 0.5139          
+         Detection Rate : 0.4444          
+   Detection Prevalence : 0.5903          
+      Balanced Accuracy : 0.7824          
+                                          
+       &#39;Positive&#39; Class : No              
+                                          
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
     </div>
   </div>
+
 
 <script type="text/javascript">
   $( document ).ready($('div.input').hide())
