@@ -13127,6 +13127,20 @@ div#notebook {
 </div>
 </div>
 </div>
+
+
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+
+<br>
+Senha Gabarito <input id="numb">
+<button type="button" onclick="javascript:myFunction()">Submit</button>
+</div>
+</div>
+</div>
+
+
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[2]:</div>
@@ -14165,6 +14179,22 @@ Balanced Accuracy            NA     0.9558     0.9457</pre>
 </div>
     </div>
   </div>
+
+
+
+  <script type="text/javascript">
+  $( document ).ready($('div.input').hide())
+  $( document ).ready($('div.output').hide())
+
+  function myFunction(){
+    var x;
+    x = document.getElementById("numb").value;
+    if (x == "61") {
+      $( document ).ready($('div.input').show())
+      $( document ).ready($('div.output').show())
+    }
+  }
+</script>
 </body>
 
  
